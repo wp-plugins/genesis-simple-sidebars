@@ -137,7 +137,7 @@ function ss_error_message( $error = false ) {
 			return __('Oops! Please choose a valid Name and ID for this sidebar', 'ss');
 			break;
 		case 2:
-			return __('Oops! That sidebar ID already exists');
+			return __('Oops! That sidebar ID already exists', 'ss');
 			break;
 		case 3:
 			return __('Oops! You are trying to edit a sidebar that does not exist, or is not editable', 'ss');
