@@ -29,7 +29,14 @@ function ss_inpost_metabox() {
 			?>
 		</select>
 	</p>
-		
+<?php
+	// don't show the option if there are no 3 column layouts registered
+	$_layouts = (array) genesis_get_layouts();
+	$_layouts = array_keys( $_layouts );
+	$_3_column = array_intersect( $_layouts, array( 'content-sidebar-sidebar', 'sidebar-content-sidebar', 'sidebar-sidebar-content' ) );
+	if ( empty( $_3_column ) )
+		return;
+?>
 	<p>
 		<label class="howto" for="_ss_sidebar_alt"><span><?php _e('Secondary Sidebar', 'ss'); ?><span></label>
 		<select name="_ss_sidebar_alt" id="_ss_sidebar_alt" style="width: 99%">

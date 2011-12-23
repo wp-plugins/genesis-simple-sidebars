@@ -50,6 +50,10 @@ function ss_create_sidebar( $args = array() ) {
 	//	nonce verification
 	check_admin_referer('simple-sidebars-action_create-sidebar');
 	
+	// WP changes a numeric sidebar id to sidebar-id which makes it inaccessible to the user
+	if ( is_numeric( $args['id'] ) )
+		$args['id'] = sanitize_title_with_dashes( $args['name'] );
+	
 	$db = (array)get_option(SS_SETTINGS_FIELD);
 	$new = array( 
 		sanitize_title_with_dashes( $args['id'] ) => array(
@@ -80,6 +84,10 @@ function ss_edit_sidebar( $args = array() ) {
 	
 	//	nonce verification
 	check_admin_referer('simple-sidebars-action_edit-sidebar');
+	
+	// WP changes a numeric sidebar id to sidebar-id which makes it inaccessible to the user
+	if ( is_numeric( $args['id'] ) )
+		$args['id'] = sanitize_title_with_dashes( $args['name'] );
 	
 	$db = (array)get_option(SS_SETTINGS_FIELD);
 	$new = array( 
