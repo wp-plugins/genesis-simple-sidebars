@@ -6,6 +6,8 @@ Description: Genesis Simple Sidebars allows you to easily create and use new sid
 Version: 0.9.2
 Author: Nathan Rice
 Author URI: http://www.nathanrice.net/
+Text Domain: ss
+Domain Path: /languages/
 */
 
 // require Genesis 1.2 upon activation
