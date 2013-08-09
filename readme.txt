@@ -2,15 +2,15 @@
 Contributors: nathanrice, wpmuguru
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5553118
 Tags: hooks, genesis, genesiswp, studiopress
-Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.0.0
+Requires at least: 3.6
+Tested up to: 3.6
+Stable tag: 2.0.0
 
-This plugin allows you to create multiple, dynamic widget areas, and assign those widget areas to sidebar locations within the Genesis Theme Framework on a per post, per page, or per tag/category archive basis.
+This plugin allows you to create multiple, dynamic widget areas, and assign those widget areas to sidebar locations within the Genesis Framework on a per post, per page, or per tag/category archive basis.
 
 == Description ==
 
-This plugin allows you to create multiple, dynamic widget areas, and assign those widget areas to sidebar locations within the Genesis Theme Framework on a per post, per page, or per tag/category archive basis.
+This plugin allows you to create multiple, dynamic widget areas, and assign those widget areas to sidebar locations within the Genesis Framework on a per post, per page, or per tag/category archive basis.
 
 Creating widget areas programmatically, then using conditional logic to properly assign them to sidebar locations can be a complex task for a beginner. This plugin allows you to do all this from a simple administration menu, and assign widget areas to sidebar locations with simple drop-down menus within the post/page edit screens, or when editing a tag or category.
 
@@ -60,5 +60,9 @@ Not in the way you're probably thinking. The markup surrounding the widget area 
 * Remove secondary selection when no 3 column layouts are enabled
 
 = 1.0.0 =
-* Increase requirement to WordPress 3.3 and Genesis 1.8.0
-* Switch to Genesis Admin class to build admin menu.
+* Reorganize theme files
+* Standards
+
+= 2.0.0 =
+* Compatibility with Genesis 2.0
+* Standards
